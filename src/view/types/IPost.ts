@@ -1,7 +1,7 @@
 import {IUser} from './IUser.ts';
-import {IPhotoDTO} from '../../dto';
+import {IIdentify, IPhotoDTO} from '../../dto';
 
-export interface IPost {
+export interface IPost extends IIdentify {
     readonly message: string;
     user: IUser;
     photos: IPhotoDTO[];
